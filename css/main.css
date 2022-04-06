@@ -1,0 +1,47 @@
+/*
+Style Name: Dr. Bronner's Beer Website
+Author: Immama Ayoub
+Version: 1.2
+*/
+
+@charset "UTF-8";
+/* CSS Document */
+/*------------------
+ 1- Global
+ 2- HOME
+ 3- CONTACT
+ 4- WHY
+ 5- BEERS
+ 6- ABOUT 
+ -------------------*/
+ /*___________________
+    Global
+  ___________________*/
+
+.hidden{
+	display: none;
+}
+
+div,p,body,header,footer,section,nav {
+	margin: 0;
+	padding: 0;
+}
+
+#Site {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	padding: 3px;
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+	font-weight: normal;
+}
+
+.mart {
+	margin: 90px;
+}
+.cent {
+	align-content: center;
+}
