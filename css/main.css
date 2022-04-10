@@ -1,7 +1,7 @@
 /*
 Style Name: Dr. Bronner's Beer Website
 Author: Immama Ayoub
-Version: 1.2
+Version: 1.3
 */
 
 @charset "UTF-8";
@@ -106,7 +106,7 @@ a.active {background:#E8DED1; color:#181D57; padding: 0.75rem;}
 	flex-direction: column;
 	align-items: center;
 }
-.flogo svg {align-content: center; padding: 1rem;}
+.flogo img {margin:0 auto; align-content: center; padding: 0.5rem 0rem 0.5rem 4.5rem; width: 50%;}
 
 .nam {
 	padding-left: 1rem;
@@ -142,26 +142,26 @@ a.active {background:#E8DED1; color:#181D57; padding: 0.75rem;}
 /*--Ad--*/
 #AdPanel {display: none;}
 /*--Products--*/
-#Products {
+#Products, #About {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding: 1rem 0rem 1rem 0rem;
 }
-#ProductText {
+#ProductText, #AboutText {
   background: #181D57;
 	align-items: center;
 	padding: 2rem;
 	height: 100%;
 }
-#ProductText p{
+#ProductText p, #AboutText p{
 	background: #181D57;
 	text-align: center;
 	color: #E8DED1;
 	padding: 1rem;
 	font-size: 2rem;
 }
-#ProductText a {
+#ProductText a, #AboutText a {
 	font-size: 1.5rem;
 	border: solid #E8DED1;
 	width: 11rem;
@@ -170,7 +170,7 @@ a.active {background:#E8DED1; color:#181D57; padding: 0.75rem;}
 	margin: 0 auto;
 	margin-bottom: 0.5rem;
 }
-#ProductImg img {
+#ProductImg img, #AboutImg img {
 	width: 100%; height: 100%; object-fit: contain;
 }
 /*--Email Sign--*/
@@ -194,7 +194,7 @@ a.active {background:#E8DED1; color:#181D57; padding: 0.75rem;}
 /*____________________________
 ----------Beers Page---------*/
 /*--Info & Banner--*/
-#Banr {
+#Banr, #Banrm {
 	background: #181D57;
 	color: #E8DED1;
 	font-size: 1.5rem;
@@ -384,7 +384,8 @@ form input, form textarea {
 }
 .beer-ad-img img {width: 100%; height: 100%; object-fit: contain;}
 
-#ad-p {object-fit: contain;}
+#ad-p video {width: 100%; object-fit: contain;}
+
 
 /*Animation Svg*/
 @keyframes ltr { 0% { opacity: 0; } 100% { opacity: 1; }}
@@ -454,10 +455,12 @@ form input, form textarea {
 	 .desk-foot {
 		 display: flex;
 		 flex-direction: row;
-		 gap: 30rem;
+		 gap: 27rem;
 		 margin: 1rem;
 	 }
 	 .nam { display: none;}
+
+	 .flogo img {align-content: center; padding: 0.5rem 0rem 0.5rem 0rem; width: 60%;}
 
 	 .fnv li:nth-child(1n+3) { display: block;} /* UNhidding other nav links*/
 	 .fnv {
@@ -474,16 +477,14 @@ form input, form textarea {
 	 .Htext { font-size: 1.75rem; top: 93%; left:91%; }
 
 	 /*--Products--*/
-	 #Products {flex-direction: row;}
-	 #ProductText {align-items: center; padding: 6rem; height: 100%;}
-	 #EmailSign p{ padding: 6rem; font-size: 2rem;}
+	 #Products, #About {flex-direction: row;}
 	 #ProductText {align-items: center; padding: 7.05rem; height: 100%;}
-	 .about-img {object-fit: contain;}
-
+	 #EmailSign p{ padding: 6rem; font-size: 2rem;}
+	 #AboutText {align-items: center; padding: 8.5rem; height: 100%;}
 
 	 /*____________________________
 	 ----------Beers Page---------*/
-	 #Banr{font-size: 4rem; padding: 2rem;}
+	 #Banr, #Banrm{font-size: 4rem; padding: 2rem;}
 
 	 .small-info {font-size: 2rem;}
 	 #info-top, #info-btm {font-size: 3rem; padding: 5rem;}
