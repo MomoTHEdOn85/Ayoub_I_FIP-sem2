@@ -1,0 +1,42 @@
+FIP - Description 
+
+Each team is responsible for designing, coding and semantically tagging a responsive
+HTML5 website (using Flexbox and or CSS Grid) to market their new brand. The site must
+be 5 pages (including a page for contact information / where they could purchase your
+new product).
+One page scroll sites are NOT permitted.
+Requirements:
+● 5 Pages (Home, About, Products/Promotions, Advertisements, Contact/Purchase)
+● Semantic tagging and Proper Document Outline
+● Responsive design from mobile to desktop
+● Valid HTML5
+● Valid CSS
+● Browser Compatibility
+● Folder structure
+● Layered working files
+
+Authoring : 
+Create some UI on the products / promotions page that can be used to load relevant
+information from an array. Think about interactivity, microinteractions / transactions, user
+experience, etc.
+Your team can use a combination of advertisements or promotions and product features.
+Create an interactive graphic / icon for each (create at least 3) and load content onto the
+page when the user requests that information. Consider scalability and responsive design
+considerations for your graphics, and choose your format(s) accordingly.
+As an example, consider a “2 for 1” promo. Create a “Click for promo details” button or
+graphic; clicking on that graphic should retrieve the content for that promo from an array
+and add or replace existing content on the page.
+Alternatively, create “hot spots” on your product images and reveal exciting information
+about a given feature on a click. As an example, you could reveal information about the
+health benefits of beer-scented baby wipes using a clickable graphic overlaid on your
+product image.
+Store the text information for each feature or promo in an array in your JavaScript file.
+Develop a way to retrieve that information on a user interaction (a hover, a click) and show
+it somewhere on the page. You can use a lightbox, a popover, a “see more” link... the UI
+choices are entirely up to you.
+All of your JavaScript code should be your own. You are free to re-use any assets from the
+Authoring class files. If you would like to use a JavaScript library for animation please ask
+first.
+LEVEL UP:
+Key your promotional material to your videos. Add layovers to your video using HTML,
+CSS and JavaScript and load your promo content on a click
