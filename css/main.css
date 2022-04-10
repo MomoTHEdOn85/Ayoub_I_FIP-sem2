@@ -12,15 +12,13 @@ Version: 1.2
  3- CONTACT
  4- WHY
  5- BEERS
- 6- ABOUT 
+ 6- ABOUT
  -------------------*/
- /*___________________
-    Global
-  ___________________*/
 
-.hidden{
-	display: none;
-}
+ /*______________________
+----------Global ---------*/
+
+.hidden{display: none;}
 
 div,p,body,header,footer,section,nav {
 	margin: 0;
@@ -32,16 +30,414 @@ div,p,body,header,footer,section,nav {
 	flex-direction: column;
 	margin: 0 auto;
 	padding: 3px;
+	overflow: hidden;
+	max-width: 1920px;
 }
 
 body {
 	font-family: 'Inter', sans-serif;
 	font-weight: normal;
 }
+.bold{font-weight: bold;}
 
-.mart {
-	margin: 90px;
+.space-top {margin-top: 0.9rem;}
+
+.cent {align-content: center;}
+
+/*----header nav---*/
+#head, #Footer{background: #181D57; padding: 0.5rem; margin-bottom: 0.2rem;}
+.nav-view {
+  position: absolute;
+  margin: 0rem 1rem;
+  right: 0;
+  cursor: pointer;
 }
-.cent {
-	align-content: center;
+.nav-check {display: none;}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem;
+  align-items: center;
+}
+.nav-menu li {
+  display: none;
+  list-style: none;}
+
+.nav-menu li:first-child {
+	margin-right:auto;
+	display: block;}
+.nav-menu svg, .flogo svg {width: 7rem; height: 5rem;} /*Logo SVG*/
+
+
+a{ display: block; text-decoration: none; color: #E8DED1;}
+a:hover {
+	cursor: pointer;
+	background:#E8DED1;
+	color:#181D57;
+	-webkit-transition: background-color 500ms linear;
+	-ms-transition: background-color 500ms linear;
+	transition: background-color 500ms linear;}
+
+a: { background:#E8DED1; color:#181D57;}
+
+a.active {background:#E8DED1; color:#181D57; padding: 0.75rem;}
+
+
+.nav-menu li:nth-child(2) {margin-top: 4rem;} /*creating space for the nav*/
+.nav-menu li:not(:first-child) {padding: 0.2rem;}
+
+/*Hamburger Menu*/
+.nav-view svg {
+	margin-top: 1rem;
+	width: 2rem;
+	height: 2rem;
+	background-color: #E8DED1;
+	padding: 0.5rem;
+}
+#nav-check:checked ~ ul.nav-menu li { display: block;}  /*for showing the list item when clicked*/
+
+#nav-check:checked ~ ul.nav-menu li:first-child { display: none;}  /*for hiding logo on nav*/
+
+/*---footer nav---*/
+.desk-foot {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.flogo svg {align-content: center; padding: 1rem;}
+
+.nam {
+	padding-left: 1rem;
+	font-size: 0.5rem;
+	color: #E8DED1;
+}
+#copyRight {
+	font-size: 0.938rem;
+	padding: 0.938rem;
+	background-color: white;
+	text-align: center;
+}
+
+.navf {display: block;}
+.fnv li:nth-child(1n+3) { display: none;} /*hidding other nav links*/
+
+.fnv li {display: inline-flex; padding: 1rem 2rem 1rem 2rem;}
+
+/*__________________________________
+----------Home Page / Index---------*/
+
+/*--Hero--*/
+.Hero_Box img {width: 100%; height: 100%; object-fit: cover;}
+.Hero {position: relative; text-align: center;}
+.Htext { /*-placing text over image-*/
+	position: absolute;
+  top: 90%;
+	left: 86.7%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-size: 0.6rem;
+	padding: 0.3rem; }
+/*--Ad--*/
+#AdPanel {display: none;}
+/*--Products--*/
+#Products {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#ProductText {
+  background: #181D57;
+	align-items: center;
+	padding: 3rem;
+	height: 100%;
+}
+#ProductText p{
+	background: #181D57;
+	text-align: center;
+	color: #E8DED1;
+	padding: 1rem;
+	font-size: 2rem;
+}
+#ProductText a {
+	font-size: 1.5rem;
+	border: solid #E8DED1;
+	width: 12rem;
+	text-align: center;
+	padding: 0.8rem;
+	margin: 0 auto;
+	margin-bottom: 0.5rem;
+}
+#ProductImg img {
+	width: 100%; height: 100%; object-fit: contain;
+}
+
+
+
+
+/*--Email Sign--*/
+
+/*--About--*/
+
+/*Desktop View*/
+
+/*____________________________
+----------Beers Page---------*/
+/*--Info & Banner--*/
+#Banr {
+	background: #181D57;
+	color: #E8DED1;
+	font-size: 1.5rem;
+	padding: 1.2rem;
+	text-align: center;}
+
+#info-top, .btm-lines {
+	font-size: 1.5rem;
+	color: #181D57;
+	text-align: center;
+	padding: 1.2rem;
+	line-height: normal;}
+
+#info-btm {
+	font-size: 1.2rem;
+	color: #181D57;
+	text-align: center;
+	padding: 1.5rem;
+	line-height: normal;}
+
+.small-info {font-size: 0.8rem;}
+/*--Beers--*/
+#Lavender {display: flex; flex-direction: column; width: 100%;}
+#descrip img, #Img img {
+	align-items: center;
+	background: #181D57;
+	width: 100%;
+	object-fit: contain;}
+
+#Tangerine {display: flex; flex-direction: column; width: 100%;}
+#descrip2 img, #Img2 img {
+	align-items: center;
+	background: #EF6323;
+	width: 100%;
+	object-fit: contain;}
+
+#Hibis {display: flex; flex-direction: column; width: 100%;}
+#descrip3 img, #Img3 img {
+	align-items: center;
+	background: #EF6323;
+	width: 100%;
+	object-fit: contain;}
+
+/*____________________________
+----------About Page---------*/
+#top-tex img{
+	align-items: center;
+	object-fit: contain;
+	width: 80%;
+	padding: 0.5rem;
+}
+#top-tex, #about-tex  {
+	font-size: 1.2rem;
+	color: #181D57;
+	text-align: center;
+	padding: 1.3rem;
+	line-height: normal;
+}
+#top-tex p, #about-tex p  {padding: 1rem 2em 1rem 2rem;}
+#images-4 {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: space-between;
+	row-gap: 0.2rem;
+	column-gap: 0.2rem;
+	padding: 2rem;
+	margin: 0 auto;
+}
+.img1 img, .img2 img {
+	object-fit: contain;
+	align-items: center;
+	width: 80%;
+	padding: 1rem;
+}
+.btm-lines p {padding: 1rem;}
+.btm-lines a {
+	background: #181D57;
+	font-size: 1.5rem;
+	border: solid #E8DED1;
+	width: 12rem;
+	text-align: center;
+	padding: 0.8rem;
+	margin: 0 auto;
+	margin-bottom: 0.5rem;
+}
+/*____________________________
+----------Contact Page---------*/
+#c-text p {
+	text-align: center;
+	font-size: 1.5rem;
+	background: #181D57;
+	color: #E8DED1;
+	padding: 4rem;
+	width: 20rem;
+	margin: 0 auto;
+}
+#contact form {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	padding: 4rem;
+	text-align: center;
+}
+form input, form textarea {
+	height: 4rem;
+	text-align: center;
+	font-size: 1.5rem;
+	background: #181D57;
+	color: #E8DED1;
+}
+/*____________________________
+----------Why Us Page---------*/
+.wonder {
+	text-align: center;
+	font-size: 1.5rem;
+	color: #181D57;
+	padding: 2rem 8rem 1rem 8rem;
+	margin: 0 auto;
+	line-height: normal;}
+.sup-bold {font-weight: bold; font-size: 3rem; color: #181D57;}
+.secret {
+	text-align: center;
+	font-size: 1rem;
+	colorS: #181D57;
+	padding: 0.2rem 6rem 1rem 6rem;}
+
+.btl {
+	position: relative;
+	object-fit: contain;
+	width: 30%;
+	padding: 3rem;
+}
+
+.btn-circle {
+	position: absolute;
+	margin: 1rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.beer-ad-img img {width: 100%; height: 100%; object-fit: contain;}
+
+#ad-p {object-fit: contain;}
+
+
+
+
+
+
+ @media screen and (min-width: 524px) {
+	 body {overflow-x: hidden; overflow-y: auto; padding: 0.5rem;}
+	 /*--header nav--*/
+	 .nav-view {display: none;}
+
+	 .nav-menu {flex-direction: row;  font-size: 1.8rem;
+		 gap: 6rem;  padding: 0rem 8rem 0rem 0rem;}
+
+	 .nav-menu li:last-child {display: none;}
+
+	 .nav-menu li {display: block; list-style: none;}
+
+	 .nav-menu li:nth-child(2) {margin-top: 0rem;} /*undoing creating space for the nav*/
+
+	 /*--footer nav--*/
+	 .desk-foot {
+		 display: flex;
+		 flex-direction: row;
+		 gap: 30rem;
+		 margin: 1rem;
+	 }
+	 .nam { display: none;}
+
+	 .fnv li:nth-child(1n+3) { display: block;} /* UNhidding other nav links*/
+	 .fnv {
+		 display: flex;
+		 padding: 0rem 8rem 0rem 0rem;
+		 font-size: 1.8rem;
+		 gap: 3rem;
+	 }
+	 .navf {display: flex; flex-direction: row; align-items: flex-end;}
+
+	 /*______________________
+	----------Home Page - Index ---------*/
+	 /*--Hero--*/
+	 .Htext { font-size: 1.75rem; top: 93%; left:91%; }
+
+	 /*--Products--*/
+	 #Products {flex-direction: row;}
+	 #ProductText {align-items: center; padding: 7.05rem; height: 100%;}
+
+	 /*____________________________
+	 ----------Beers Page---------*/
+	 #Banr{font-size: 4rem; padding: 2rem;}
+
+	 .small-info {font-size: 2rem;}
+	 #info-top, #info-btm {font-size: 3rem; padding: 5rem;}
+	 /*--Lavender--*/
+	 #Lavender {flex-direction: row-reverse;}
+	 #Lavender img {object-fit: cover; width: 100%; height: 45rem;}
+
+	 /*--Tangerine--*/
+	 #Tangerine {flex-direction: row;}
+	 #Tangerine img {object-fit: cover; width: 100%; height: 40rem;}
+
+   /*--Hibiscus--*/
+   #Hibis {flex-direction: row-reverse;}
+   #Hibis img {object-fit: cover; width: 100%; height: 40rem;}
+
+	 /*____________________________
+	 ----------About Page---------*/
+	 #top-tex img{width: 60%; padding: 1rem;}
+
+	 #top-tex, #about-tex  {font-size: 2.4rem; padding: 2rem;}
+	 #top-tex p, #about-tex p  {padding: 2rem 6rem 2rem 6rem;}
+
+	 #images-4 {
+		justify-content: space-around;
+	 	padding: 1rem 10rem 1rem 10rem;
+	 	margin: 0 auto;
+	 }
+	 .img1 img, .img2 img {width: 70%; padding: 2rem 5rem 2rem 5rem;}
+
+	 .btm-lines p {font-size: 2rem; padding: 1rem;}
+
+	 /*____________________________
+	 ----------Contact Page---------*/
+	 #c-text p {padding: 4rem; width: 40rem; margin: 0 auto;}
+	 #contact form {
+		margin: 0 auto;
+		width: 40rem;
+	 	gap: 3rem;
+	 	padding: 5rem 5rem 5rem 5rem;
+	 	text-align: center;
+	 }
+
+	 /*____________________________
+	----------Why Us Page---------*/
+
+
+
+
+
+
+
+
 }
